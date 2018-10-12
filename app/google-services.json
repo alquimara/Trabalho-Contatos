@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "160722990596",
+    "firebase_url": "https://agenda-39e89.firebaseio.com",
+    "project_id": "agenda-39e89",
+    "storage_bucket": "agenda-39e89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160722990596:android:6885391f9a72ed05",
+        "android_client_info": {
+          "package_name": "com.example.alquimaraalves.teste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160722990596-e2k6a7cll8ek07qcuclf90n1i0pb63br.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkj9LQjoulNCL8fN4TTrdbV_QWtto1E2Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
