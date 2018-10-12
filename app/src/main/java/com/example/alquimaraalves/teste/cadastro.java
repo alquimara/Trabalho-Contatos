@@ -42,7 +42,7 @@ public class cadastro extends AppCompatActivity {
                 nome.setText("");
                 telefone.setText("");
                 endereco.setText("");
-
+                voltar();
 
 
             }
@@ -59,17 +59,17 @@ public class cadastro extends AppCompatActivity {
 
     }
     private boolean salvarProdutos(Contato produtos){
-       try {
-           firebase = ConfiguracaoFirebase.getFirebase().child("Contatos");
-           firebase.child(produtos.getUid()).setValue(produtos);
-           Toast.makeText(cadastro.this, "produto inserido com sucesso", Toast.LENGTH_LONG).show();
-           return true;
+        try {
+            firebase = ConfiguracaoFirebase.getFirebase().child("Contatos");
+            firebase.child(produtos.getUid()).setValue(produtos);
+            Toast.makeText(cadastro.this, "produto inserido com sucesso", Toast.LENGTH_LONG).show();
+            return true;
 
-       }catch (Exception e){
-           e.printStackTrace();
-           return false;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
 
-       }
+        }
 
     }
     private void voltar(){

@@ -44,17 +44,17 @@ public class editar extends AppCompatActivity {
         editar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 Contato contatos = new Contato();
-                 contatos.setNome(nome.getText().toString());
-                 contatos.setTelefone(telefone.getText().toString());
-                 contatos.setEndereco(endereco.getText().toString());
-                 contatos.setUid(uid);
+                Contato contatos = new Contato();
+                contatos.setNome(nome.getText().toString());
+                contatos.setTelefone(telefone.getText().toString());
+                contatos.setEndereco(endereco.getText().toString());
+                contatos.setUid(uid);
 
                 atualizarContatos(contatos);
                 nome.setText("");
                 telefone.setText("");
                 endereco.setText("");
-
+                voltar();
 
 
             }
@@ -72,7 +72,7 @@ public class editar extends AppCompatActivity {
         });
     }
 
-   private boolean atualizarContatos(Contato produtos){
+    private boolean atualizarContatos(Contato produtos){
         try {
             firebase = ConfiguracaoFirebase.getFirebase().child("Contatos");
             firebase.child(produtos.getUid()).setValue(produtos);
